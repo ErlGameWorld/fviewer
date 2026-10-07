@@ -1,0 +1,16 @@
+{application, fviewer, [
+    {description, "Web file viewer over eWSrv websocket"},
+    {vsn, "0.1.0"},
+    {registered, [fviewer_sup]},
+    {mod, {fviewer_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        eNet,
+        eWSrv
+    ]},
+    {env, [{port, 8989}]},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+]}.
